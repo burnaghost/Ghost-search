@@ -1,0 +1,2 @@
+# Ghost-search
+Search now
