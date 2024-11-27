@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine Ghost</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+      
+       
+    }
+    .cont{
+        background: linear-gradient(45deg, orange,tomato,rgb(246, 69, 38));
+        height:100vh;
+       display:grid;
+       overflow: hidden;
+     
+    }
+    form input{
+        height: 50px;
+        width: 600px;
+        border-radius: 30px;
+        border-bottom: 4px solid #000;
+        font-size: 20px;
+    }
+    .search_cont{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+                
+    }
+
+    .search_cont p{
+        font-size: large;
+       
+
+    }
+
+
+
+
+    footer{
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 50px;
+        justify-content: space-between;
+        text-wrap:wrap;
+    }
+    footer .links a{
+        text-align:center;
+        text-decoration:none;
+        color: white;
+        padding:20px;
+    }
+    footer .links a:hover{
+        color: orange;
+        font-weight: bold;
+        transition:.5s;
+    }
+    .more{
+        text-align: right;
+        float: right;
+    }
+    .morelinks{
+      
+        text-align: center;
+        font-size: large;
+    }
+    /* styling the pop up*/
+    
+   
+
+</style>
+<body>
+    
+    <div class="cont">
+
+       
+        <div class="search_cont">
+
+          
+            <form action="https://www.google.com/search"method="GET">
+                <div class="more">
+                   
+                     <select name="More " id="">
+                      <nav>
+                            <ul>
+                               
+                                <option value="1"><li><a href="https://mail.google.com/">Gmail</a></li></option>
+                                <option value="2"><li><a href="https://mail.google.com/">Gmail</a></li></option>
+                                <option value="3"><li><a href="https://mail.google.com/">Gmail</a></li></option>
+                                <option value="4"><li><a href="https://mail.google.com/">Gmail</a></li></option>
+                                <option value="5"><li><a href="https://mail.google.com/">Gmail</a></li></option>
+                            </ul>
+                        </nav>
+                      </div>
+                     </select>
+              
+                   
+                    
+                    <script>
+                        const more_bar =document.getElementById("links");
+                        const close =document.getElementById("close");
+
+                        more_bar.onclick=function(){
+                            links.style.display='block';
+                        }
+                        close.onclick=function(){
+                            links.style.display='none';
+                        }
+
+
+                    </script>
+                </div>
+                <h1 style="text-align: center;color: white;font-family: monospace;font-size: 40px;">Ghost Search</h1>
+                <input type="text"name="q"placeholder="Search">
+                <div class="quick">
+                    <h1 style="color: aquamarine;">Quick search</h1>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+        <a href="https://www.burnaghost/website.github.io">MY GIT</a>
+        <a href="https://poe.com/login">POE.com</a>
+        <a href="https://you.com/">You.com</a>
+        <a href="https://tuta.com/">Tuta.io</a>
+        <a href="https://proton.me/mail">Proton mail</a>
+
+    </div>
+    <div class="copy">
+        &copy;Burna Ghost
+        </div>
+    </footer>
+    
+</body>
+</html>
